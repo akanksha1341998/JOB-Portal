@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>USER PORTAL</title>
+<meta name="viewport" content="width=device-width , initil-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bahnschrift SemiBold Condensed";
+}
+
+/* Style the header */
+.header {
+   background-color: #008080;
+    padding: 20px;
+    text-align: center;
+	height:100px;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #FF7F50;
+	padding: 20px;
+	text-align: center;
+	
+}
+
+/* Style the topnav links */
+.header a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#content {
+  
+    
+    background-image: url("images/back.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	text-align: center;
+	color: white;
+	
+}
+.article{
+position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    color: white;
+    width: 100%;
+	height: 600px;
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+div.bar{
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 45px;
+	padding: 10px;
+	width: 200px;
+	margin: 0 auto;
+}
+/* Style the register links */
+.bar a {
+    
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.bar a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+/* Style the footer */
+.footer {
+        background-color: #FF7F50;
+    padding: 20px;
+    text-align: center;
+	height:100px;
+	color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/jobsportal.png" style="float:left;height:70px;width:150px">
+  <a href="seekerlogin.html"><img src="images/logout.png" style="height:30px;width:30px;" align="middle"> Log Out</a> 
+  <a href="userhome.html" target="frameMain"><img src="images/aboutus.png" style="height:30px;width:30px;" align="middle"> About Us</a>
+  <a href="JobPortalHome.html"><img src="images/home.png" style="height:30px;width:30px;" align="middle"> Home</a>
+  
+</div>
+
+<div class="topnav">
+	<form action="userportal.php" method="post" target="frameMain">
+	<select name="skill" required>
+	<option value="">Your Job Skill</option>
+	<option value="IT software/hardware/network">Information technology</option>
+	<option value="Engineering">Engineering</option>
+	<option value="Sales and marketing">sales and marketing</option>
+	<option value="Entertainment and media">Entertainment and media</option>
+	<option value="Education/Training">Education/Training</option>
+	</select> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<select name="location" required>
+	<option value="">Your Location</option>
+	<option value="Mumbai">Mumbai</option>
+	<option value="Ahmedabad">Ahmedabad</option>
+	<option value="Pune">Pune</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Hydrabad">Hydrabad</option>
+	<option value="Delhi">Delhi</option>
+	</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<input type="submit" value="SEARCH">
+	</form>
+</div>
+<div id="content">
+<div class="article" style="font-size:16px;color:white;">
+<iframe  src="userhome.html" width="100%" height="100%" name="frameMain">
+<h2>Take your career to next level with us...<br></h2>
+	<img src="images/view.png" style="float:left;height:50px;width:50px;" align="middle">Get discovered by top employs<br><br>
+	<hr>
+	<img src="images/bell.png" style="float:left;height:50px;width:50px;" align="middle">Search your dream job<br><br>
+	<hr>
+	<img src="images/apply.png" style="float:left;height:50px;width:50px;" align="middle">Access quick apply options<hr><br><br><br><br>
+<fieldset>
+<legend style="color:white;><img src="images/building.png" style="height:40px;width:40px;" align="middle"><b style="font-size:25px;color:white;">Top Companies Hiring</b></legend>
+<img src="images/dell.png" style="height:70px;width:70px;" align="middle">&nbsp&nbsp
+<img src="images/hsbc.png" style="height:80px;width:100px;" align="middle">&nbsp&nbsp
+<img src="images/ebay.png" style="height:70px;width:110px;" align="middle">&nbsp&nbsp
+<img src="images/hp.png" style="height:80px;width:80px;" align="middle">&nbsp&nbsp
+<img src="images/tata.png" style="height:80px;width:80px;" align="middle">&nbsp&nbsp
+<img src="images/mastercard.png" style="height:80px;width:110px;" align="middle">&nbsp&nbsp
+<img src="images/burrow.png" style="height:70px;width:110px;" align="middle">&nbsp&nbsp<br><br>
+<img src="images/amazon.png" style="height:100px;width:110px;" align="middle">&nbsp&nbsp
+<img src="images/suzuki.png" style="height:100px;width:110px;" align="middle">&nbsp&nbsp
+<img src="images/multi.png" style="height:120px;width:150px;" align="middle">&nbsp&nbsp
+<img src="images/capitol.png" style="height:90px;width:110px;" align="middle">&nbsp&nbsp
+</fieldset>
+</iframe>
+</div>
+</div>
+<div class="footer">
+  <p>&copy; 2018 JOB PORTAL. All rights reserved.</p>
+
+</div>
+  
+</body>
+</html>

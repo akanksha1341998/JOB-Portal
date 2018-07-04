@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width , initil-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body{margin:0;}
+.header {
+    background-color: #008080;
+    padding: 20px;
+    text-align: center;
+	height:100px;
+	background-image: url("images/bg1.jpeg");
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #2F4F4F;
+	text-align: center;
+	
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+	text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row: after{
+	content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    background-color: #2F4F4F;
+    padding: 20px;
+    text-align: center;
+	height:80px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="images/jobsportal.png" style="float:left;height:70px;width:150px">
+</div>
+
+<div class="topnav">
+  <a href="JobPortalHome.html"><img src="images/home.png" style="height:30px;width:30px;" align="middle"> Home</a> 
+  <a href="seekerlogin.html"><img src="images/icon1.png" style="height:30px;width:30px;" align="middle"> Employ seeker login</a>
+</div>
+<div class="row">
+  <div class="column side">
+    </div>
+  <div class="column middle">
+    <form action="provider.php" method="post">
+	<fieldset>
+	<img src="images/icon2.png" style="height:120px;width:120px;"><br><br><br>
+	Login Id<br><br>
+	<input type="text" name="uname" required><br><br><br>
+	PASSWORD<br><br>
+	<input type="password" name="pword" required><br><br><br>
+	<input type="submit" value="Login">   <input type="reset">
+	</fieldset>
+	</form>
+	</div>
+  <div class="column side">
+     </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2018 JOB PORTAL. All rights reserved.</p>
+</div>
+</body>
+</html>

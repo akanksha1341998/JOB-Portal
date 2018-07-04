@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<meta name="viewport" content="width=device-width , initil-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body{margin:0;}
+.header {
+    background-color: #008080;
+    padding: 20px;
+    text-align: center;
+	height:100px;
+	background-image: url("images/bg1.jpeg");
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #2F4F4F;
+	text-align: center;
+	
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+	
+	color:red;
+
+	
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+	text-align: center;
+position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    padding: 20px;
+	color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row{
+	background-image: url("images/jobsearch.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.row: after{
+	content: "";
+    display: table;
+    clear: both;
+
+}
+.footer {
+    background-color: #2F4F4F;
+    padding: 20px;
+    text-align: center;
+	height:80px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="images/jobsportal.png" style="float:left;height:70px;width:150px">
+</div>
+
+<div class="topnav">
+  <a href="JobPortalHome.html"><img src="images/home.png" style="height:30px;width:30px;" align="middle"> Home</a> 
+  <a href="seekerlogin.html"><img src="images/icon1.png" style="height:30px;width:30px;" align="middle"> Employ seeker login</a> 
+  <a href="provider.html"><img src="images/icon2.png" style="height:30px;width:30px;" align="middle"> Employer login</a>
+</div>
+<div class="row">
+  <div class="column side">
+  
+</div>
+  <div class="column middle">
+  <b>
+    <form action="seekerRegister.php" method="post">
+	
+	<h3>JOIN US</h3>
+	<hr>
+	Name &nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="name" required><br><br><br>
+	Username&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="uid" required><br><br><br>
+	Password&nbsp&nbsp&nbsp&nbsp
+	<input type="password" name="pword" required><br><br><br>
+	Email id&nbsp&nbsp&nbsp&nbsp
+	<input type="email" name="eid" required><br><br><br>
+	Date Of Birth&nbsp&nbsp&nbsp&nbsp
+	<input type="date" name="dob" required><br><br><br>
+	Contact Number&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="con" required><br><br><br>
+	Job Skill&nbsp&nbsp&nbsp&nbsp
+	<select name="skill">
+	<option value="IT software/hardware/network">Information technology</option>
+	<option value="Engineering">Engineering</option>
+	<option value="Sales and marketing">sales and marketing</option>
+	<option value="Entertainment and media">Entertainment and media</option>
+	<option value="Education/Training">Education/Training</option>
+	</select><br><br><br>
+	Location&nbsp&nbsp&nbsp&nbsp
+	<select name="location">
+	<option value="Mumbai">Mumbai</option>
+	<option value="Ahmedabad">Ahmedabad</option>
+	<option value="Pune">Pune</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Hydrabad">Hydrabad</option>
+	<option value="Delhi">Delhi</option>
+	</select><br><br><br>
+	Attach your Resume&nbsp&nbsp&nbsp&nbsp
+	<input type="file" name="cv" required><br><br><br>
+
+	<input type="submit" value="CREATE ACCOUNT">   <input type="reset">
+	</form>
+	</b>
+	</div>
+  
+</div>
+
+<div class="footer">
+  <p>&copy; 2018 JOB PORTAL. All rights reserved.</p>
+</div>
+</body>
+</html>

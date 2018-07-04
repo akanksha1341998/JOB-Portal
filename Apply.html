@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width , initil-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Bahnschrift SemiBold Condensed";
+}
+#content {
+  
+    
+    background-image: url("images/back.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	text-align: center;
+	color: white;
+	
+}
+.article{
+position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    color: white;
+    width: 100%;
+	height: 600px;
+
+
+}
+}
+</style>
+</head>
+<body>
+<div id="content">
+<div class="article" style="font-size:16px;color:white;">
+<form action="Apply.php" method="post">
+<fieldset>
+<legend><img src="images/jobapply.png" style="height:40px;width:40px;" align="middle"><b style="font-size:25px">Apply Now!!!</b></legend>
+Name<br><br><input type="text" name="name" required><br><br>
+Enter the Job Id for which you are applying(*Mentioned in the job description)<br><br><input type="text" name="jid" required><br><br>
+Email<br><br><input type="text" name="email" required><br><br>
+Contact Number<br><br><input type="text" name="con" required><br><br>
+Gender&nbsp&nbsp&nbsp&nbsp M  <input type="radio" name="gender" value="M" required>   F  <input type="radio" name="gender" value="F" required><br><br>
+Qualification<br><br><input type="text" name="qul" required><br><br>
+Experience<br><br><input type="text" name="exp" required><br><br>
+<input type="Submit" value="Confirm">   <input type="reset">
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

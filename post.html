@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Posting</title>
+<meta name="viewport" content="width=device-width , initil-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bahnschrift SemiBold Condensed";
+}
+
+/* Style the header */
+.header {
+   background-color: #008080;
+    padding: 20px;
+    text-align: center;
+	height:100px;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #FF7F50;
+	text-align: left;
+	
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style the topnav links */
+.header a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#content {
+  
+    
+    background-image: url("images/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	text-align: center;
+	color: white;
+	
+}
+.article{
+position: relative;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    color: white;
+    width: 100%;
+    padding: 20px;
+	height: 600px;
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+div.bar{
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 45px;
+	padding: 10px;
+	width: 200px;
+	margin: 0 auto;
+}
+/* Style the register links */
+.bar a {
+    
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.bar a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+/* Style the footer */
+.footer {
+        background-color: #FF7F50;
+    padding: 20px;
+    text-align: center;
+	height:100px;
+	color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="images/jobsportal.png" style="float:left;height:70px;width:150px">
+  <a href="provider.html"><img src="images/logout.png" style="height:30px;width:30px;" align="middle"> Log Out</a> 
+  <a href="JobPortalHome.html"><img src="images/home.png" style="height:30px;width:30px;" align="middle"> Home</a>
+</div>
+
+<div class="topnav">
+	<a href="post.html"><img src="images/post.png" style="height:30px;width:30px;" align="middle"> Posting Job</a> 
+	<a href="applicant.html"><img src="images/msg.png" style="height:30px;width:30px;" align="middle"> View Applicants</a>
+</div>
+<div id="content">
+<div class="article" style="font-size:16px;color:white;">
+<form action="post.php" method="post">
+	
+	<h3>POSTING A JOB</h3>
+	<hr>
+	
+	Company Name &nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="comp" required><br><br><br>
+	Job Id &nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="jid" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	Postion&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="post" required><br><br><br>
+	Job Description&nbsp&nbsp&nbsp&nbsp
+	<input type="textarea" name="decp" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	Job Skill&nbsp&nbsp&nbsp&nbsp
+	<select name="skill">
+	<option value="IT software/hardware/network">Information technology</option>
+	<option value="Engineering">Engineering</option>
+	<option value="Sales and marketing">sales and marketing</option>
+	<option value="Entertainment and media">Entertainment and media</option>
+	<option value="Education/Training">Education/Training</option>
+	</select><br><br><br>
+	Location&nbsp&nbsp&nbsp&nbsp
+	<select name="location">
+	<option value="Mumbai">Mumbai</option>
+	<option value="Ahmedabad">Ahmedabad</option>
+	<option value="Pune">Pune</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Hydrabad">Hydrabad</option>
+	<option value="Delhi">Delhi</option>
+	</select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	Qualification&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="qul" required><br><br><br>
+	Experience&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="exp" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	Salary&nbsp&nbsp&nbsp&nbsp
+	<input type="text" name="sal" required><br><br><br>
+	<input type="submit" value="Post The Job">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     <input type="reset">
+	</form>
+</div>
+</div>
+<div class="footer">
+  <p>&copy; 2018 JOB PORTAL. All rights reserved.</p>
+
+</div>
+  
+</body>
+</html>
